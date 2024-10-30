@@ -26,7 +26,7 @@ export default function RootLayout({
 
       >
       <Navbar />
-        <div className="bg-bg_light dark:bg-bg_dark">
+        <div className="bg-bg_light dark:bg-bg_dark px-2 sm:px-4 md:px-8">
 
           {children}
         </div>
