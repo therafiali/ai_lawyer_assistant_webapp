@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${varelaRound.className} `}
 
       >
-      <Navbar/>
+      <Navbar />
         <div className="bg-bg_light dark:bg-bg_dark">
 
           {children}

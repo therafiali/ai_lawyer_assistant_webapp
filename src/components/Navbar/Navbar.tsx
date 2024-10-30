@@ -40,9 +40,9 @@ const Navbar = () => {
     return (
         <>
 
-            <nav className="bg-nav_light dark:bg-nav_dark  shadow-md shadow-sky_blue/2566">
-                <div className="sm:max-w-screen-xl sm:px-4 py-3 mx-auto flex flex-col sm:flex-row justify-between items-center ">
-                    <div className='flex justify-around sm:justify-between
+            <nav className="bg-nav_light dark:bg-nav_dark  shadow-md shadow-sky_blue/25 ">
+                <div className="sm:max-w-screen-xl sm:px-4 py-3 mx-auto flex flex-col sm:flex-row justify-between items-center  ">
+                    <div className='flex justify-between px-2 sm:px-0
                     w-full'>
                         {
                             currentMode === 'light' ? (
@@ -79,12 +79,12 @@ const Navbar = () => {
 
                     </div>
                     <Separator className='my-4 flex sm:hidden bg-bg_light dark:bg-white' />
-                    <div className="sm:hidden flex items-center ">
-                        <ul className="flex flex-row justify-between font-medium mt-0 space-x-8 rtl:space-x-reverse text-lg">
+                    <div className="  sm:hidden flex items-center   w-full px-2 sm:px-0 ">
+                        <ul className="flex flex-row justify-around items-center font-medium mt-0 space-x-8 rtl:space-x-reverse text-lg w-full">
                             {menuItems.map((item, index) => (
                                 <li key={index}>
                                     <Link href={item.link}
-                                        className=" dark:text-white duration-200 transition-colors hover:text-xl hover:text-sky_blue dark:hover:text-sky_blue">
+                                        className="">
                                         {item.name}
 
                                     </Link>
