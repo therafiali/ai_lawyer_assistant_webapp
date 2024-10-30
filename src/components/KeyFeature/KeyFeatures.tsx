@@ -32,7 +32,7 @@ answers from your meetings.`;
 
     return (
         <section>
-            <TypographyH1 text={mainHeading} className='text-left my-8 sm:text-center md:16' />
+            <TypographyH1 text={mainHeading} className='text-left my-8 sm:text-center md:my-16' />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
                 {featuredData.map((item, index) => (
