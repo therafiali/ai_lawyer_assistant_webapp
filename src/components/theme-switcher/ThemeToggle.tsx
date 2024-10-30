@@ -23,12 +23,13 @@ const ThemeToggle = () => {
 
     return (
         <div
-            className='flex items-center justify-center  cursor-pointer'
+            className='flex items-center justify-center  cursor-pointer duration-200 hover:scale-105 hover:text-sky_blue dark:hover:text-sky_blue'
             onClick={() => setDarkMode(!darkMode)}
         >
-            {darkMode ? <Sun color="yellow" size={28} /> : <Moon color="blue" size={28} />}
+            {darkMode ? <Sun color="white" size={28} /> : <Moon color="black" size={28} />}
         </div>
     );
 };
 
 export default ThemeToggle;
+44

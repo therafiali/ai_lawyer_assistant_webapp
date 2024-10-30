@@ -50,10 +50,13 @@ const config: Config = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			},
-			  bg_light: '#E9FBFF',
+			  bg_light: '#F2F2F7',
 			  bg_dark: '#1E2A44',
 			  sky_blue: '#1CDAFF',
 			  nav_dark:'#15375F',
+			  nav_light:'#EBEBF0',
+			  btn_light:'#1D54C6',
+			  btn_dark:'#1CDAFF',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
