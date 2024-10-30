@@ -25,4 +25,3 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({ title, description, icon })
 }
 
 export default FeaturedCard;
-44444444
