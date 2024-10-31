@@ -1,3 +1,4 @@
+import BenifitsOFYM from "@/components/Benifits/BenifitsofYM";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import HowToUse from "@/components/HowToUse/HowToUse";
 import KeyFeatures from "@/components/KeyFeature/KeyFeatures";
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection/>
       <KeyFeatures/>
       <HowToUse/>
+      <BenifitsOFYM/>
     </section>
   );
 }
