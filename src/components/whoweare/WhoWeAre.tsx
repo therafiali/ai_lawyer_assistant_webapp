@@ -2,6 +2,7 @@ import React from "react";
 import { TypographyH1 } from "../ui/myschema";
 import Johndoe from '@/assets/Team/johndoe.jpg';
 import TeamCard from "./TeamCard";
+import TeamSlider from "../CaroselSlider/TeamSlider";
 
 const WhoWeAre = () => {
   const mainHeading = `Who we are`;
@@ -38,6 +39,26 @@ const WhoWeAre = () => {
         { platform: "Instagram", link: "https://instagram.com/alexsmith" },
       ],
     },
+    {
+      imageSrc: Johndoe,
+      name: "Alex Smith",
+      role: "Lead Designer",
+      socialMedia: [
+        { platform: "Facebook", link: "https://facebook.com/alexsmith" },
+        { platform: "Linkedin", link: "https://linkedin.com/in/alexsmith" },
+        { platform: "Instagram", link: "https://instagram.com/alexsmith" },
+      ],
+    },
+    {
+      imageSrc: Johndoe,
+      name: "Alex Smith",
+      role: "Lead Designer",
+      socialMedia: [
+        { platform: "Facebook", link: "https://facebook.com/alexsmith" },
+        { platform: "Linkedin", link: "https://linkedin.com/in/alexsmith" },
+        { platform: "Instagram", link: "https://instagram.com/alexsmith" },
+      ],
+    },
   ];
 
   return (
@@ -46,17 +67,7 @@ const WhoWeAre = () => {
         text={mainHeading}
         className="text-left my-8 sm:text-center md:my-16"
       />
-      <div className="flex flex-wrap justify-center gap-6">
-        {teamMembers.map((member) => (
-          <TeamCard 
-            key={member.name} 
-            imageSrc={member.imageSrc} 
-            name={member.name} 
-            role={member.role} 
-            socialMedia={member.socialMedia} 
-          />
-        ))}
-      </div>
+      <TeamSlider slides={teamMembers} />
     </section>
   );
 };

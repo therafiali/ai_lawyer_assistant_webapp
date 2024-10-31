@@ -1,7 +1,6 @@
 import React from "react";
 import { TypographyH1, TypographyP } from "../ui/myschema";
-import { Button } from "../ui/button";
-import { describe } from "node:test";
+
 
 const Aboutus = () => {
   const mainHeading = `About us`;
