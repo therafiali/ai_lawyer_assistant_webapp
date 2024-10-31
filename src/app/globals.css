@@ -70,3 +70,16 @@ body {
     @apply bg-bg_light dark:bg-bg_dark text-black dark:text-white;
   }
 }
+
+
+.slick-prev,
+.slick-next {
+  z-index: 1; /* Ensure arrows are above other elements */
+  color: black; /* Set the arrow color to black */
+  background: #000;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black; /* Ensure the default arrow icons are also black */
+}
