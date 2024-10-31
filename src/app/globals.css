@@ -83,3 +83,12 @@ body {
 .slick-next:before {
   color: black; /* Ensure the default arrow icons are also black */
 }
+
+::selection {
+  color: white;
+  background: #1CDAFF;
+}
+
+* {
+  scroll-behavior: smooth;
+}
