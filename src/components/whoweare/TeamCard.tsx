@@ -14,8 +14,8 @@ interface SocialMedia {
 interface TeamCardProps {
   imageSrc: string | StaticImageData;
   name: string;
-  role: string;
-  socialMedia: SocialMedia[];
+  role?: string;
+  socialMedia?: SocialMedia[];
 }
 
 const TeamCard: React.FC<TeamCardProps> = ({ imageSrc, name, role, socialMedia }) => {
@@ -31,7 +31,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ imageSrc, name, role, socialMedia }
           <span className="text-gray-500 dark:text-gray-400">{role}</span>
           <TypographyP text="Veteran industry expert in design and development of commercial grade technology solutions for businesses" />
           <ul className="flex space-x-4 sm:mt-0">
-            {socialMedia.map(({ platform, link }) => {
+            {socialMedia?.map(({ platform, link }) => {
               const Icon = platform === "Facebook" ? Facebook :
                 platform === "Linkedin" ? Linkedin :
                   platform === "Instagram" ? Instagram : null;

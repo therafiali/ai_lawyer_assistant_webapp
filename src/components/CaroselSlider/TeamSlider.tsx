@@ -15,8 +15,8 @@ interface SocialMedia {
 interface TeamCardProps {
     imageSrc: string | StaticImageData;
     name: string;
-    role: string;
-    socialMedia: SocialMedia[];
+    role?: string ;
+    socialMedia?: SocialMedia[]; 
 }
 
 interface TeamSliderProps {

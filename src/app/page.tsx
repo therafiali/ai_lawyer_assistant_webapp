@@ -1,5 +1,6 @@
 import Aboutus from "@/components/About/About";
 import BenifitsOFYM from "@/components/Benifits/BenifitsofYM";
+import EventsBlog from "@/components/EventsBlog/EventsBlog";
 import FAQ from "@/components/FAQ/Faq";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import HowToUse from "@/components/HowToUse/HowToUse";
@@ -19,6 +20,7 @@ export default function Home() {
       <Aboutus/>
       <WhoWeAre/>
       <FAQ/>
+      <EventsBlog/>
     </section>
   );
 }
