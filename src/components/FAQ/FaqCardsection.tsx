@@ -1,6 +1,7 @@
+"use client"
 import { useRef, useState } from "react";
 
-const FaqsCard = ({ faqsList }) => {
+export const FaqsCard = ({ faqsList }) => {
     const answerElRef = useRef(null);
     const [state, setState] = useState(false);
     const [answerH, setAnswerH] = useState('0px');
@@ -46,31 +47,3 @@ const FaqsCard = ({ faqsList }) => {
         </div>
     );
 };
-
-export default function FaqSection() {
-    const faqsList = [
-        { q: "What are some random questions to ask?", a: "..." },
-        { q: "Do you include common questions?", a: "..." },
-        { q: "Can I use this for 21 questions?", a: "..." },
-        { q: "Are these questions for girls or for boys?", a: "..." },
-        { q: "What do you wish you had more talent doing?", a: "..." }
-    ];
-
-    return (
-        <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8">
-            <div className="space-y-3 text-center">
-                <h1 className="text-3xl text-gray-800 font-semibold">
-                    Frequently Asked Questions
-                </h1>
-                <p className="text-gray-600 max-w-lg mx-auto text-lg">
-                    Answered all frequently asked questions, Still confused? feel free to contact us.
-                </p>
-            </div>
-            <div className="mt-14 max-w-2xl mx-auto">
-                {faqsList.map((item, idx) => (
-                    <FaqsCard key={idx} faqsList={item} />
-                ))}
-            </div>
-        </section>
-    );
-}

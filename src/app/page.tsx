@@ -1,5 +1,6 @@
 import Aboutus from "@/components/About/About";
 import BenifitsOFYM from "@/components/Benifits/BenifitsofYM";
+import FAQ from "@/components/FAQ/Faq";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import HowToUse from "@/components/HowToUse/HowToUse";
 import KeyFeatures from "@/components/KeyFeature/KeyFeatures";
@@ -17,6 +18,7 @@ export default function Home() {
       <TypeOfQuestions/>
       <Aboutus/>
       <WhoWeAre/>
+      <FAQ/>
     </section>
   );
 }
