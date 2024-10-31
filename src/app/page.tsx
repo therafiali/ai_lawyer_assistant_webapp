@@ -1,5 +1,6 @@
 import Aboutus from "@/components/About/About";
 import BenifitsOFYM from "@/components/Benifits/BenifitsofYM";
+import ContactUs from "@/components/Contact/ContactUs";
 import EventsBlog from "@/components/EventsBlog/EventsBlog";
 import FAQ from "@/components/FAQ/Faq";
 import HeroSection from "@/components/HeroSection/HeroSection";
@@ -23,6 +24,7 @@ export default function Home() {
       <FAQ/>
       <EventsBlog/>
       <Newsletter/>
+      <ContactUs/>
     </section>
   );
 }
